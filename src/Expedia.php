@@ -13,9 +13,9 @@ class Expedia
     protected $url = 'api.ean.com/ean-services/rs/hotel/v3/';
     protected $hostBook = "book.api.ean.com/ean-services/rs/hotel/v3/";
 
-    protected $key = "";
-    protected $secret = "";
-    protected $cid = "";
+    protected $key;
+    protected $secret;
+    protected $cid;
     protected $sig;
 
     protected $minor_rev = 99;
@@ -31,6 +31,14 @@ class Expedia
 
     /** @var string  logging connection information */
     protected $verbose_log;
+
+
+    public function __construct($key, $secret, $cid)
+    {
+        $this->key = $key;
+        $this->secret = $secret;
+        $this->cid = $cid;
+    }
 
     /**
      * @return int
