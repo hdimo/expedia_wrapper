@@ -13,9 +13,9 @@ class Expedia
     protected $url = 'api.ean.com/ean-services/rs/hotel/v3/';
     protected $hostBook = "book.api.ean.com/ean-services/rs/hotel/v3/";
 
-    protected $key = "3v8k7mtirn35adrr5num6gr1mf";
-    protected $secret = "1rv9nlimd3qri";
-    protected $cid = "497429";
+    protected $key = "";
+    protected $secret = "";
+    protected $cid = "";
     protected $sig;
 
     protected $minor_rev = 99;
