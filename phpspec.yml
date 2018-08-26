@@ -1,0 +1,4 @@
+suites:
+  expedia_suite:
+    namespace: Jkhaled\Expedia
+    psr4_prefix: Jkhaled\Expedia
