@@ -1,15 +1,13 @@
 {
-    "name": "buonzz/composer-library-template",
-    "description": "Boilerplate package for creating other packages.",
-    "keywords": ["template", "composer", "package"],
-    "license": "DBAD",
+    "name": "jkhaled/expedia",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Darwin Biler",
-            "email": "buonzz@gmail.com"
+            "name": "khaled hadj abderrahmane",
+            "email": "jkhaled.hadj.a@gmail.com"
         }
     ],
-    "type": "project",
+    "type": "package",
     "require": {
 		"php": ">=7.1",
         "symfony/options-resolver": "^4.2@dev"
