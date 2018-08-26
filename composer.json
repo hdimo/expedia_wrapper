@@ -1,5 +1,6 @@
 {
     "name": "jkhaled/expedia",
+    "description": "expedia api wrapper",
     "license": "MIT",
     "authors": [
         {
@@ -13,7 +14,8 @@
         "symfony/options-resolver": "^4.2@dev"
     },
     "require-dev": {
-		"phpunit/phpunit": "6.*"
+		"phpunit/phpunit": "6.*",
+        "phpspec/phpspec": "^5.0@dev"
     },
     "autoload": {
         "psr-4": {
