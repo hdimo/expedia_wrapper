@@ -23,6 +23,7 @@ class HotelList extends AbstractExpediaRequest implements RequestInterface
         'include_details' => true,
         'include_hotel_fee_breakdown' => true,
         'number_of_result' => 25,
+        'sort' => 'BUDGET',
     ];
 
     /**
