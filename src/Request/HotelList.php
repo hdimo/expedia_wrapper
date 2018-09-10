@@ -82,6 +82,7 @@ class HotelList extends AbstractExpediaRequest implements RequestInterface
     </RoomGroup>
     <includeDetails>true</includeDetails>
     <includeHotelFeeBreakdown>true</includeHotelFeeBreakdown>
+    <sort>{$this->options['sort']}</sort>
     {$this->getLocation()}
 </HotelListRequest>
 XML;
