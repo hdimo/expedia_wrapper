@@ -1,3 +1,4 @@
+* this is a deprecated version *
 Expedia-PHP-API - v3 DEPRECATED since 2019
 ===============
 
