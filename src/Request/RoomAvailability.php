@@ -85,9 +85,14 @@ class RoomAvailability extends AbstractExpediaRequest implements RequestInterfac
         $resolver = new OptionsResolver();
         $resolver->setDefaults($this->options);
 
-        $resolver->setRequired(array_keys($this->default_options));
-        $resolver->setAllowedTypes('hotelId', 'int');
+        $requriedFields = array_keys($this->default_options);
+        if(self::VERIFY_SELECTED_ROOM == $options['type_of_request']){
+            $requriedFields = array_merge($requriedFields, array_keys($this->default_option_verify_room));
+        }
 
+        $resolver->setRequired($requriedFields);
+
+        $resolver->setAllowedTypes('hotelId', 'int');
         $resolver->setAllowedValues('date_in', function ($value) {
             return AllowedType::AllowedDate($value);
         });
@@ -98,9 +103,6 @@ class RoomAvailability extends AbstractExpediaRequest implements RequestInterfac
             return AllowedType::AllowedRoom($value);
         });
 
-        if(self::VERIFY_SELECTED_ROOM == $options['type_of_request']){
-            $resolver->setRequired(array_keys($this->default_option_verify_room));
-        }
 
         $this->options = $resolver->resolve($options);
     }
