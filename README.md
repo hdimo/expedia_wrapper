@@ -1,4 +1,4 @@
-Expedia-PHP-API - v3 DEPRECATED since 2019
+Expedia-PHP-API - v3 DEPRECATED from 2019
 ===============
 
 PHP Wrapper for Expedia API
